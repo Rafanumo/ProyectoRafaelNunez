@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BreweryApp.DetalleCerveza">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="15">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Beer Name:" ForegroundColor="Black" FontAttributes="Bold" />
+                        <!--<Span Text="Default" />-->
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{Binding name}" />
+            <Label FontSize="15">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Description:" ForegroundColor="Black" FontAttributes="Bold" />
+                        <!--<Span Text="Default" />-->
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{Binding description}"/>
+            <Label FontSize="15">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Style" ForegroundColor="Black" FontAttributes="Bold" />
+                        <!--<Span Text="Default" />-->
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{Binding style.name}"/>
+            <Label Text="{Binding style.description}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BreweryApp.MaestroDetalle">
+    <MasterDetailPage.Detail>
+    <ContentPage>
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Proyecto Rafael Núñez Mora" />
+                <Image Source="main.jpg" />
+                <Button Text="Begin" x:Name="botonNavegar" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

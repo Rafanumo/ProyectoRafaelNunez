@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BreweryApp.ListadoCervezas"
+             x:Name="ListadoBeers">
+    <ContentPage.Content>
+        <ListView x:Name="lvBeers"
+                  IsPullToRefreshEnabled="False" 
+				  BindingContext="{x:Reference ListadoBeers}"
+				  ItemsSource="{Binding Datos}" 
+			      RefreshCommand="{Binding ComandoRefrescar}" 
+			      IsRefreshing="{Binding IsBusy}"
+				  IsVisible="True"
+                  ItemSelected="OnSelection"
+			>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding name}" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
